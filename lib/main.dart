@@ -22,6 +22,12 @@ class MyAppState extends State<MyApp> {
           body: Container(
             color: Colors.lime,
           ),
+          floatingActionButton: FloatingActionButton(
+            onPressed:() => debugPrint("hi"),
+            tooltip: 'hi',
+            child : Icon(Icons.bluetooth_connected),
+            backgroundColor: Colors.deepOrange
+          ),
           bottomNavigationBar:
               BottomNavigationBar(currentIndex: _current, items: [
             BottomNavigationBarItem(
